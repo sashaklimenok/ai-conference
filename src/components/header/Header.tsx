@@ -21,13 +21,18 @@ export const Header = () => {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuLink asChild>
-            <Link href="/" className="text-base font-medium">
+            <Link href="/#home" className="text-base font-medium">
               Home
             </Link>
           </NavigationMenuLink>
           <NavigationMenuLink asChild>
-            <Link href="/about" className="text-base font-medium">
+            <Link href="/#about" className="text-base font-medium">
               About
+            </Link>
+          </NavigationMenuLink>
+          <NavigationMenuLink asChild>
+            <Link href="/time" className="text-base font-medium">
+              Time
             </Link>
           </NavigationMenuLink>
         </NavigationMenuList>
