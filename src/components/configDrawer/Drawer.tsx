@@ -30,8 +30,10 @@ export function ConfigDrawer() {
     },
   });
 
-  const onSubmit = async () => {
-    API.post("/notify");
+  const onSubmit = async (values: Record<string, string>) => {
+    API.post("/notify", {
+      projectKey: values.projectKey,
+    });
   };
 
   return (
